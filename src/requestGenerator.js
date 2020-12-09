@@ -5,7 +5,7 @@ function generateRequest() {
         requestid: 1,
         dentistid: 2,
         issuance: generateIssuance(),
-        time: generateDate(31, 0700, 12)
+        time: generateDate(31, 07, 12)
     }
     return request;
 }
