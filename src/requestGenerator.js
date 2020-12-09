@@ -1,12 +1,16 @@
+let email = 1;
 function generateRequest() {
     var request = {
         method: 'add',
+        name: 'name'+email,
+        emailaddress: email,
         userid: generateRandomUserId(),
         requestid: 1,
         dentistid: 2,
         issuance: generateIssuance(),
         time: generateDate(31, 07, 12)
     }
+    email++
     return request;
 }
 
