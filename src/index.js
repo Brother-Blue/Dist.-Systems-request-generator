@@ -19,8 +19,8 @@ client.on('connect', (err) => {
 });
 
 function publishrequests() {
-    for(var i = 0; i <= 100; i++) {
+    for(var i = 0; i < 100; i++) {
         var newRequest = generateRequest();
-        client.publish(`${root}appointments`, JSON.stringify(newRequest));
+        client.publish(`${root}appointments`, JSON.stringify(newRequest), 2);
     }
 }
