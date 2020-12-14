@@ -14,15 +14,16 @@ function generateRequest() {
     return request;
 }
 
-// function to generate a random 5 digit userId
+// function to generate a random 10 digit userId
 function generateRandomUserId() {
-    userid = Math.floor(Math.random()*90000) + 10000;
+    userid = Math.floor(Math.random()*9000000000) + 10000;
     return userid;
 }
 
 //function to generate a random 13 digit issuancenumber
 function generateIssuance() {
-    issuance = Math.floor(Math.random()*9000000000000) + 1000000000000;
+    var d = new Date()
+    issuance = d.getTime()
     return issuance;
 }
 
