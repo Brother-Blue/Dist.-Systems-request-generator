@@ -6,7 +6,7 @@ function generateRequest() {
         emailaddress: email,
         userid: generateRandomUserId(),
         requestid: 1,
-        dentistid: 2,
+        dentistid: '2',
         issuance: generateIssuance(),
         time: generateDate(31, 07, 12)
     }
